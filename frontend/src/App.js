@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './components/Home';
+import Header from './components/Layouts/Header';
 import Footer from './components/layouts/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
@@ -37,7 +38,6 @@ import UpdateOrder from './components/admin/UpdateOrder';
 import UserList from './components/admin/UserList';
 import UpdateUser from './components/admin/UpdateUser';
 import ReviewList from './components/admin/ReviewList';
-import Header from './components/Layouts/Header';
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("")
