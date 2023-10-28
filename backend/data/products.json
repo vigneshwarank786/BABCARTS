@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Puck Cream Cheese",
+        "price": 10,
+        "description": "Ingredients. Cream cheese (pasteurized raw cow's milk, lactic acid starter culture), palm oil, salt, emulsifier salt (E339). No rennet or preservatives added. ...",
+        "ratings": "0",
+        "images": [
+            {
+                "image": "http://localhost:8000/uploads/product/puck cream cheese.png"
+            }
+        ],
+        "category": "Dairy Products",
+        "seller": "Babsindh",
+        "stock": 8,
+        "numOfReviews": 0,
+        "user": "653d3ee8af385f43f88f2703",
+        "reviews": [],
+        "__v": 0
+    },
+    {
+        "name": "mara baked beans",
+        "price": 8,
+        "description": "Mara Baked Beans in Tomato Sauce is ready to eat baked beans is a combination of the flavorful recipes and the best-baked beans in the world, ready for you to open and enjoy. The use of only white lacquered cans enables us to seal in freshness.",
+        "ratings": "0",
+        "images": [
+            {
+                "image": "http://localhost:8000/uploads/product/mara baked beans.png"
+            }
+        ],
+        "category": "Canned Foods",
+        "seller": "edigroups",
+        "stock": 3,
+        "numOfReviews": 0,
+        "user": "653d3ee8af385f43f88f2703",
+        "reviews": [],
+        "__v": 0
+    },
+    {
+        "name": "cadbury drinking chocolate",
+        "price": 15,
+        "description": " Cadbury Drinking Chocolate powder makes irresistible chocolate milk. Sip it hot, slurp it cold or sprinkle it on any beverage for flavor. This chocolate drink is a favorite of all and is extremely easy to make, as it dissolves instantly.",
+        "ratings": "0",
+        "images": [
+            {
+                "image": "http://localhost:8000/uploads/product/cadbury drinking chocolate.png"
+            }
+        ],
+        "category": "Chocolates",
+        "seller": "Babsindh",
+        "stock": 10,
+        "numOfReviews": 0,
+        "user": "653d3ee8af385f43f88f2703",
+        "reviews": [],
+        "__v": 0
+    },
+    {
+        "name": "kelloks_special_classic",
+        "price": 25,
+        "description": "Special K® Classic is a source of 7 vitamins, and iron and zinc. Made with rice, whole-wheat and barley, these delicious flakes are a source of protein and fibre – worth waking up for!",
+        "ratings": "0",
+        "images": [
+            {
+                "image": "http://localhost:8000/uploads/product/kelloks_special_classic.png"
+            }
+        ],
+        "category": "Breakfast Cereals",
+        "seller": "Babsindh",
+        "stock": 2,
+        "numOfReviews": 0,
+        "user": "653d3ee8af385f43f88f2703",
+        "reviews": [],
+        "__v": 0
+    },
+    {
+        "name": "Nutella",
+        "price": 6,
+        "description": "Nutella is described as a chocolate and hazelnut spread, although it is mostly made of sugar and palm oil. The manufacturing process for this food item is very similar to a generic production of chocolate spread.",
+        "ratings": "0",
+        "images": [
+            {
+                "image": "http://localhost:8000/uploads/product/nutella-removebg-preview.png"
+            }
+        ],
+        "category": "Sauces and Spreads",
+        "seller": "Babsindh",
+        "stock": 2,
+        "numOfReviews": 0,
+        "user": "653d3ee8af385f43f88f2703",
+        "reviews": [],
+        "__v": 0
+    },
+    {
+        "name": "Mountain Dew",
+        "price": 6,
+        "description": "Original Mountain Dew is a citrus-flavored soda. The soft drink is unique because it includes a small amount of orange juice. While some have compared Mountain Dew to lemon-lime soda, it is antithetically different and unique from them and has spawned many imitators from the Original Mountain Dew.",
+        "ratings": "0",
+        "images": [
+            {
+                "image": "http://localhost:8000/uploads/product/moutain dew.png"
+            }
+        ],
+        "category": "Juices and Drinks",
+        "seller": "edigroups",
+        "stock": 15,
+        "numOfReviews": 0,
+        "user": "653d3ee8af385f43f88f2703",
+        "reviews": [],
+        "__v": 0
+    }
+]
