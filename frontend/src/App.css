@@ -206,7 +206,7 @@ footer {
   width: 64px;
   height: 64px;
   margin: 8px;
-  border-radius: 50%;
+  border-radius: 51%;
   border: 6px solid #fa9c23;
   border-color: #fa9c23 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
