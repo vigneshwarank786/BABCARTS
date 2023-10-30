@@ -677,13 +677,34 @@ ul.CTAs a {
     padding-left: 0;
   }
 
+ 
+
+   .card-title a {
+    font-size: 1rem;
+  }
+
   .card-text {
-    font-size: 1.4rem;
+    font-size: 0.85rem;
   }
 
   #view_btn {
-    background-color: #fa9c23;
-    color: white;
+    font-size: 0.85rem;
+    padding: 0.3rem 1rem;
+  }
+
+  #delete_cart_item {
+    font-size: 0.85rem;
+    padding: 0.3rem 1rem;
+  }
+
+  #checkout_btn,
+  .review-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 1rem;
+  }
+
+  #order_summary {
+    padding: 1rem 1rem;
   }
 
   .card-img-top {
