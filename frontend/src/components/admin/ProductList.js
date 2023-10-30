@@ -94,24 +94,28 @@ export default function ProductList() {
 
 
     return (
-        <div className="row">
-        <div className="col-12 col-md-2">
-                <Sidebar/>
-        </div>
-        <div className="col-12 col-md-10">
-            <h1 className="my-4">Product List</h1>
-            <Fragment>
-                {loading ? <Loader/> : 
-                    <MDBDataTable
-                        data={setProducts()}
-                        bordered
-                        striped
-                        hover
-                        className="px-3"
-                    />
-                }
-            </Fragment>
-        </div>
+           <div className="row">
+    <div className="col-12 col-md-2">
+      <Sidebar />
     </div>
+    <div className="col-12 col-md-10">
+      <h1 className="my-4">Product List</h1>
+      <div className="table-responsive">
+        <div className="mobile-table-container">
+          {loading ? (
+            <Loader />
+          ) : (
+            <MDBDataTable
+              data={setProducts()}
+              bordered
+              striped
+              hover
+              className="px-3"
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
     )
 }
