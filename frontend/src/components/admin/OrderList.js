@@ -95,23 +95,25 @@ export default function OrderList() {
 
     return (
         <div className="row">
-        <div className="col-12 col-md-2">
-                <Sidebar/>
-        </div>
-        <div className="col-12 col-md-10">
-            <h1 className="my-4">Order List</h1>
-            <Fragment>
-                {loading ? <Loader/> : 
-                    <MDBDataTable
-                        data={setOrders()}
-                        bordered
-                        striped
-                        hover
-                        className="px-3"
-                    />
-                }
-            </Fragment>
-        </div>
+      <div className="col-12 col-md-2 col-sm-12">
+        <Sidebar />
+      </div>
+      <div className="col-12 col-md-10 col-sm-12">
+        <h1 className="my-4">Order List</h1>
+        <Fragment>
+          {loading ? <Loader /> :
+            <MDBDataTable
+              data={setOrders()}
+              bordered
+              striped
+              hover
+              responsive
+              small  // Add this small prop for a more mobile-friendly table
+              className="px-3"
+            />
+          }
+        </Fragment>
+      </div>
     </div>
-    )
+  );
 }

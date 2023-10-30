@@ -108,7 +108,7 @@ export default function ProductDetail () {
 
                     <hr/>
 
-                    <p id="product_price">{product.price} AED</p>
+                    <p id="product_price">{product.price}AED</p>
                     <div className="stockCounter d-inline">
                         <span className="btn btn-danger minus" onClick={decreaseQty} >-</span>
 
@@ -185,7 +185,8 @@ export default function ProductDetail () {
 
                 {
                 product.reviews && product.reviews.length > 0 ?
-                <ProductReview reviews={product.reviews} /> : null
+                <ProductReview reviews={product.reviews.map((review, index) => ({ ...review, key: index }))} />
+                : null
                 }
             </Fragment>}
         </Fragment>

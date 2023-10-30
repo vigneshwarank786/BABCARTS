@@ -6,7 +6,7 @@
         "ratings": "0",
         "images": [
             {
-                "image": "http://localhost:8000/uploads/product/puck cream cheese.png"
+                "image": "http://34.224.21.224:8000/uploads/product/puck cream cheese.png"
             }
         ],
         "category": "Dairy Products",
@@ -24,7 +24,7 @@
         "ratings": "0",
         "images": [
             {
-                "image": "http://localhost:8000/uploads/product/mara baked beans.png"
+                "image": "http://34.224.21.224:8000/uploads/product/mara baked beans.png"
             }
         ],
         "category": "Canned Foods",
@@ -42,7 +42,7 @@
         "ratings": "0",
         "images": [
             {
-                "image": "http://localhost:8000/uploads/product/cadbury drinking chocolate.png"
+                "image": "http://34.224.21.224:8000/uploads/product/cadbury drinking chocolate.png"
             }
         ],
         "category": "Chocolates",
@@ -60,7 +60,7 @@
         "ratings": "0",
         "images": [
             {
-                "image": "http://localhost:8000/uploads/product/kelloks_special_classic.png"
+                "image": "http://34.224.21.224:8000/uploads/product/kelloks_special_classic.png"
             }
         ],
         "category": "Breakfast Cereals",
@@ -78,7 +78,7 @@
         "ratings": "0",
         "images": [
             {
-                "image": "http://localhost:8000/uploads/product/nutella-removebg-preview.png"
+                "image": "http://34.224.21.224:8000/uploads/product/nutella-removebg-preview.png"
             }
         ],
         "category": "Sauces and Spreads",
@@ -96,7 +96,7 @@
         "ratings": "0",
         "images": [
             {
-                "image": "http://localhost:8000/uploads/product/moutain dew.png"
+                "image": "http://34.224.21.224:8000/uploads/product/moutain dew.png"
             }
         ],
         "category": "Juices and Drinks",

@@ -92,26 +92,29 @@ export default function UserList() {
         dispatch(getUsers)
     },[dispatch, error, isUserDeleted])
 
-
     return (
         <div className="row">
-        <div className="col-12 col-md-2">
-                <Sidebar/>
-        </div>
-        <div className="col-12 col-md-10">
+          <div className="col-12 col-md-2">
+            <Sidebar />
+          </div>
+          <div className="col-12 col-md-10">
             <h1 className="my-4">User List</h1>
-            <Fragment>
-                {loading ? <Loader/> : 
-                    <MDBDataTable
-                        data={setUsers()}
-                        bordered
-                        striped
-                        hover
-                        className="px-3"
-                    />
-                }
-            </Fragment>
+            <div className="table-responsive">
+              <div className="mobile-table-container">
+                {loading ? (
+                  <Loader />
+                ) : (
+                  <MDBDataTable
+                    data={setUsers()}
+                    bordered
+                    striped
+                    hover
+                    className="px-3"
+                  />
+                )}
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    )
-}
+      );
+    }

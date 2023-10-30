@@ -99,41 +99,49 @@ export default function ReviewList() {
 
     return (
         <div className="row">
-        <div className="col-12 col-md-2">
-                <Sidebar/>
-        </div>
-        <div className="col-12 col-md-10">
+          <div className="col-12 col-md-2">
+            <Sidebar />
+          </div>
+          <div className="col-12 col-md-10">
             <h1 className="my-4">Review List</h1>
             <div className="row justify-content-center mt-5">
-                <div className="col-5">
-                    <form onSubmit={submitHandler}>
-                        <div className="form-group">
-                            <label >Product ID</label>
-                            <input 
-                                type="text"
-                                onChange= {e => setProductId(e.target.value)}
-                                value={productId}
-                                className="form-control"
-                            />
-                        </div>
-                        <button type="submit" disabled={loading} className="btn btn-primary btn-block py-2">
-                            Search
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <Fragment>
-                {loading ? <Loader/> : 
-                    <MDBDataTable
-                        data={setReviews()}
-                        bordered
-                        striped
-                        hover
-                        className="px-3"
+              <div className="col-12 col-md-5">
+                <form onSubmit={submitHandler}>
+                  <div className="form-group">
+                    <label>Product ID</label>
+                    <input
+                      type="text"
+                      onChange={(e) => setProductId(e.target.value)}
+                      value={productId}
+                      className="form-control"
                     />
-                }
-            </Fragment>
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="btn btn-primary btn-block py-2"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div className="table-responsive">
+              <div className="mobile-table-container">
+                {loading ? (
+                  <Loader />
+                ) : (
+                  <MDBDataTable
+                    data={setReviews()}
+                    bordered
+                    striped
+                    hover
+                    className="px-3"
+                  />
+                )}
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    )
-}
+      );
+    }

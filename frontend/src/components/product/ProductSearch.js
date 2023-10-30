@@ -21,23 +21,37 @@ export default function ProductSearch() {
   const [price, setPrice] = useState([1, 1000]);
   const [priceChanged, setPriceChanged] = useState(price);
   const [category, setCategory] = useState(null);
-  const [rating, setRating] = useState(0);
+  let [rating, setRating] = useState(0);
 
   const { keyword } = useParams();
   const categories = [
-        "Dairy Products",
-        "Canned Foods",
-        "Chocolates",
-        "Breakfast Cereals",
-        "Sauces and Spreads",
-        "Juices and Drinks",
-        "Candy and Mints",
-        "Cooking Ingredients",
-        "Bakery Items",
+    "Dairy Products",
+    "Canned Foods",
+    "Chocolates",
+    "Breakfast Cereals",
+    "Sauces and Spreads",
+    "Juices and Drinks",
+    "Candy and Mints",
+    "Cooking Ingredients",
+    "Bakery Items",
   ];
 
   const setCurrentPageNo = (pageNo) => {
     setCurrentPage(pageNo);
+  };
+
+  const handlePriceChange = (value) => {
+    setPrice(value);
+  };
+
+  const handlePriceChangeComplete = (value) => {
+    setPriceChanged(value);
+  };
+
+  const getTooltipOverlay = (value) => {
+    return (
+      <div>{`AED${value}`}</div>
+    );
   };
 
   useEffect(() => {
@@ -61,28 +75,28 @@ export default function ProductSearch() {
             <div className="row">
               <div className="col-6 col-md-3 mb-5 mt-5">
                 {/* Price Filter */}
-                <div className="px-5" onMouseUp={() => setPriceChanged(price)}>
+                <div className="px-5">
                   <Slider
-                    range={true}
+                    range
                     marks={{
-                      1: "1AED",
-                      1000: "1000AED",
+                      1: "1 AED",
+                      1000: "1000 AED",
                     }}
                     min={1}
                     max={1000}
-                    defaultValue={price}
-                    onChange={(price) => {
-                      setPrice(price);
-                    }}
-                    handleRender={(renderProps) => {
-                      return (
-                        <Tooltip
-                          overlay={`${renderProps.props["aria-valuenow"]}AED`}
-                        >
-                          <div {...renderProps.props}> </div>
-                        </Tooltip>
-                      );
-                    }}
+                    value={price}
+                    onChange={handlePriceChange}
+                    onAfterChange={handlePriceChangeComplete}
+                    tipFormatter={(value) => getTooltipOverlay(value)}
+                    handleRender={
+                        renderProps => {
+                            return (
+                                <Tooltip  overlay={`${renderProps.props['aria-valuenow']}`}  >
+                                     <div {...renderProps.props}>  </div>
+                                </Tooltip>
+                            )
+                        }
+                    }
                   />
                 </div>
                 <hr className="my-5" />
@@ -126,7 +140,7 @@ export default function ProductSearch() {
                           <div
                             className="rating-inner"
                             style={{
-                              width: `${star * 20}%`,
+                              width: `${(star * 100) / 5}%`,
                             }}
                           ></div>
                         </div>

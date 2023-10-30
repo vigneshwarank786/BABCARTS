@@ -3,32 +3,77 @@ const ErrorHandler = require('../utils/errorHandler')
 const catchAsyncError = require('../middlewares/catchAsyncError')
 const APIFeatures = require('../utils/apiFeatures');
 
-//Get Products - /api/v1/products
-exports.getProducts = catchAsyncError(async (req, res, next)=>{
+
+exports.getProducts = catchAsyncError(async (req, res, next) => {
     const resPerPage = 4;
-    
+
     let buildQuery = () => {
-        return new APIFeatures(Product.find(), req.query).search().filter()
-    }
-    
-    const filteredProductsCount = await buildQuery().query.countDocuments({})
+        return new APIFeatures(Product.find(), req.query).search().filter();
+    };
+
     const totalProductsCount = await Product.countDocuments({});
     let productsCount = totalProductsCount;
+    let products = await buildQuery().paginate(resPerPage).query;
 
-    if(filteredProductsCount !== totalProductsCount) {
-        productsCount = filteredProductsCount;
+    if (req.query.ratings) {
+        const requestedRating = parseInt(req.query.ratings);
+
+        // Filter products by the requested rating
+        products = products.filter((product) => {
+            const ratingsArray = product.reviews.map((review) => parseFloat(review.rating));
+            const sumRatings = ratingsArray.reduce((acc, rating) => acc + rating, 0);
+            const averageRating = sumRatings / ratingsArray.length;
+            const roundedRating = Math.round(averageRating);
+
+            return roundedRating === requestedRating;
+        });
+        
+        productsCount = products.length;
     }
+
+    // Calculate the average rating for each product and ensure it's in the 1 to 5 range
+    const updatedProducts = products.map((product) => {
+        const ratingsArray = product.reviews.map((review) => parseFloat(review.rating));
+        const sumRatings = ratingsArray.reduce((acc, rating) => acc + rating, 0);
+        const averageRating = sumRatings / ratingsArray.length;
+        const roundedRating = Math.round(averageRating);
+
+        return {
+            ...product.toObject(),
+            ratings: roundedRating,
+         };
+
+    });
+
     
-    const products = await buildQuery().paginate(resPerPage).query;
+
 
     res.status(200).json({
-        success : true,
+        success: true,
         count: productsCount,
         resPerPage,
-        products
-    })
-})
+        products: updatedProducts,
+    });
+});
 
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 //Create Product - /api/v1/product/new
 exports.newProduct = catchAsyncError(async (req, res, next)=>{
     let images = []
@@ -55,18 +100,30 @@ exports.newProduct = catchAsyncError(async (req, res, next)=>{
 });
 
 //Get Single Product - api/v1/product/:id
-exports.getSingleProduct = catchAsyncError(async(req, res, next) => {
-    const product = await Product.findById(req.params.id).populate('reviews.user','name email');
-
-    if(!product) {
-        return next(new ErrorHandler('Product not found', 400));
+exports.getSingleProduct = catchAsyncError(async (req, res, next) => {
+    const product = await Product.findById(req.params.id).populate('reviews.user', 'name email');
+  
+    if (!product) {
+      return next(new ErrorHandler('Product not found', 400));
     }
-
+  
+    // Calculate the average rating for the product
+    const ratingsArray = product.reviews.map((review) => parseFloat(review.rating));
+    const sumRatings = ratingsArray.reduce((acc, rating) => acc + rating, 0);
+    const averageRating = sumRatings / ratingsArray.length;
+  
+    // Ensure the average rating is in the 1 to 5 range
+    const oneToFiveRating = Math.min(5, Math.max(1, averageRating));
+  
+    // Update the product with the calculated average rating
+    product.ratings = oneToFiveRating;
+  
     res.status(201).json({
-        success: true,
-        product
-    })
-})
+      success: true,
+      product,
+    });
+  });
+  
 
 //Update Product - api/v1/product/:id
 exports.updateProduct = catchAsyncError(async (req, res, next) => {
