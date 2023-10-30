@@ -108,7 +108,7 @@ export default function OrderList() {
               striped
               hover
               responsive
-              small  // Add this small prop for a more mobile-friendly table
+              small  
               className="px-3"
             />
           }
