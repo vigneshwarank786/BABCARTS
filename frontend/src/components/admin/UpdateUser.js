@@ -1,10 +1,11 @@
 import { Fragment, useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import { useDispatch, useSelector} from 'react-redux';
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getUser, updateUser } from "../../actions/userActions";
 import { clearError, clearUserUpdated } from "../../slices/userSlice";
 import { toast } from "react-toastify";
+import MetaData from "../layouts/MetaData";
 
 export default function UpdateUser () {
     const [name, setName] = useState("");
@@ -60,7 +61,9 @@ export default function UpdateUser () {
 
 
     return (
-        <div className="row">
+        <Fragment>
+            <MetaData title={'Update Users'}/>
+  <div className="row">
             <div className="col-12 col-md-2">
                     <Sidebar/>
             </div>
@@ -114,5 +117,7 @@ export default function UpdateUser () {
             </div>
         </div>
         
+        </Fragment>
+      
     )
 }

@@ -8,6 +8,7 @@ import Loader from '../layouts/Loader';
 import { MDBDataTable} from 'mdbreact';
 import {toast } from 'react-toastify'
 import Sidebar from "./Sidebar"
+import MetaData from "../layouts/MetaData"
 
 export default function OrderList() {
     const { adminOrders = [], loading = true, error, isOrderDeleted }  = useSelector(state => state.orderState)
@@ -94,7 +95,9 @@ export default function OrderList() {
 
 
     return (
-        <div className="row">
+        <Fragment>
+            <MetaData title={'Order Lists'}/>
+ <div className="row">
       <div className="col-12 col-md-2 col-sm-12">
         <Sidebar />
       </div>
@@ -115,5 +118,7 @@ export default function OrderList() {
         </Fragment>
       </div>
     </div>
+        </Fragment>
+       
   );
 }

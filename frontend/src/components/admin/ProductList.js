@@ -8,6 +8,7 @@ import Loader from '../layouts/Loader';
 import { MDBDataTable} from 'mdbreact';
 import {toast } from 'react-toastify'
 import Sidebar from "./Sidebar"
+import MetaData from "../layouts/MetaData"
 
 export default function ProductList() {
     const { products = [], loading = true, error }  = useSelector(state => state.productsState)
@@ -94,7 +95,9 @@ export default function ProductList() {
 
 
     return (
-           <div className="row">
+        <Fragment>
+            <MetaData title={'Products List'}/>
+       <div className="row">
     <div className="col-12 col-md-2">
       <Sidebar />
     </div>
@@ -117,5 +120,7 @@ export default function ProductList() {
       </div>
     </div>
   </div>
+        </Fragment>
+    
     )
 }
