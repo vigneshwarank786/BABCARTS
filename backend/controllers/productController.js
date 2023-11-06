@@ -4,15 +4,30 @@ const catchAsyncError = require('../middlewares/catchAsyncError')
 const APIFeatures = require('../utils/apiFeatures');
 
 
+
+
+
+
+
+    
+
 exports.getProducts = catchAsyncError(async (req, res, next) => {
-    const resPerPage = 4;
+    const resPerPage = 12;
 
     let buildQuery = () => {
         return new APIFeatures(Product.find(), req.query).search().filter();
     };
 
-    const totalProductsCount = await Product.countDocuments({});
-    let productsCount = totalProductsCount;
+    let productsCount; // Initialize the count variable
+
+    // Check if a search was performed
+    if (req.query.keyword && req.query.keyword.length > 0) {
+        const searchQuery = buildQuery();
+        productsCount = await searchQuery.query.countDocuments(); // Count documents based on the search query
+    } else {
+        productsCount = await Product.countDocuments(); // Count all documents
+    }
+
     let products = await buildQuery().paginate(resPerPage).query;
 
     if (req.query.ratings) {
@@ -27,7 +42,7 @@ exports.getProducts = catchAsyncError(async (req, res, next) => {
 
             return roundedRating === requestedRating;
         });
-        
+
         productsCount = products.length;
     }
 
@@ -41,12 +56,8 @@ exports.getProducts = catchAsyncError(async (req, res, next) => {
         return {
             ...product.toObject(),
             ratings: roundedRating,
-         };
-
+        };
     });
-
-    
-
 
     res.status(200).json({
         success: true,
@@ -55,7 +66,6 @@ exports.getProducts = catchAsyncError(async (req, res, next) => {
         products: updatedProducts,
     });
 });
-
 
 
 
