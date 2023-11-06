@@ -1,7 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { NavDropdown } from 'react-bootstrap';
 import { Fragment } from 'react';
-import MetaData from '../layouts/MetaData';
 
 export default function Sidebar () {
 
@@ -9,7 +8,7 @@ export default function Sidebar () {
 
     return (
         <Fragment>
-            <MetaData title={'Admin Sidebar'}/>
+            
   <div className="sidebar-wrapper">
             <nav id="sidebar">
                 <ul className="list-unstyled components">

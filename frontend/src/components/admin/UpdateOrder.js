@@ -76,7 +76,7 @@ export default function UpdateOrder () {
                             <p><b>Name:</b> {user.name}</p>
                             <p><b>Phone:</b> {shippingInfo.phoneNo}</p>
                             <p className="mb-4"><b>Address:</b>{shippingInfo.address}, {shippingInfo.city}, {shippingInfo.postalCode}, {shippingInfo.state}, {shippingInfo.country}</p>
-                            <p><b>Amount:</b> ${totalPrice}</p>
+                            <p><b>Amount:</b> {totalPrice}AED</p>
     
                             <hr />
     
