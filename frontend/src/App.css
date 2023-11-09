@@ -455,7 +455,7 @@ footer {
 
 /* User Profile */
 
-#login_button,#register_button{
+#login_button,#register_button,#pay_btn,#shipping_btn{
   border-radius: 2rem;
 }
 

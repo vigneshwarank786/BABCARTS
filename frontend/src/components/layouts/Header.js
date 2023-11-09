@@ -51,7 +51,7 @@ export default function Header() {
                     <Link to="/login" className="btn" id="login_btn">Login</Link>
                 )}
                 <Link to="/cart"><span id="cart" className="ml-3">Cart</span></Link>
-                <span className="ml-1" id="cart_count">{cartItems.length}</span>
+                <Link to="/cart"><span className="ml-1" id="cart_count">{cartItems.length}</span></Link>
             </div>
         </nav>
     )
