@@ -70,7 +70,7 @@ export default function ProductSearch() {
       ) : (
         <Fragment>
           <MetaData title={"Buy Best Products"} />
-          <h1 id="products_heading">Search Products</h1>
+          <h1 id="products_heading">Search <span className="redtext">Products</span></h1>
           <section id="products" className="container mt-5">
             <div className="row">
               <div className="col-6 col-md-3 mb-5 mt-5">
@@ -102,7 +102,7 @@ export default function ProductSearch() {
                 <hr className="my-5" />
                 {/* Category Filter */}
                 <div className="mt-5">
-                  <h3 className="mb-3">Categories</h3>
+                  <h3 className="mb-3 filters">Categories</h3>
                   <ul className="pl-0">
                     {categories.map((category) => (
                       <li
@@ -123,7 +123,7 @@ export default function ProductSearch() {
                 <hr className="my-5" />
                 {/* Ratings Filter */}
                 <div className="mt-5">
-                  <h4 className="mb-3">Ratings</h4>
+                  <h4 className="mb-3 filters">Ratings</h4>
                   <ul className="pl-0">
                     {[5, 4, 3, 2, 1].map((star) => (
                       <li

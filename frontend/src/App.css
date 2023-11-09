@@ -26,12 +26,19 @@ body {
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #241571;
   padding: 1rem 1rem;
 }
 
 #search_btn {
-  background-color: #febd69;
+  background-color: #6CA6CD
+
+;
+}
+
+.filters{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .input-group {
@@ -46,9 +53,14 @@ nav {
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #6CA6CD
+
+;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
+  color: #fffafa;
+  font-weight: bold;
+  border-radius: 2rem;
 }
 
 #cart {
@@ -57,7 +69,9 @@ nav {
 }
 
 #cart_count {
-  background-color: #febd69;
+  background-color: #6CA6CD
+
+;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
   color: black;
@@ -68,6 +82,11 @@ nav {
 /* Home page */
 #products_heading {
   margin-top: 1.8rem;
+  font-family: 'Sansita', sans-serif;
+}
+
+.redtext{
+  color: red;
 }
 
 .card {
@@ -76,6 +95,9 @@ nav {
 
 .card-title a {
   color: #2e2e2e;
+  font-family: 'Poppins', sans-serif;
+
+
 }
 
 .card-title a:hover {
@@ -115,7 +137,7 @@ nav {
 /* Footer */
 footer {
   color: white; /* Set the text color to white */
-  background-color: #2e343c;
+  background-color: #241571;
   bottom: 0;
   width: 100%;
 }
@@ -151,6 +173,12 @@ footer {
   color: grey;
   font-size: 0.8rem;
 }
+
+.detailname{
+  font-family: 'Poppins', sans-serif;
+
+}
+
 
 #product_price {
   font-size: 2rem;
@@ -238,7 +266,7 @@ footer {
 }
 
 #card_item_price {
-  color: #febd69;
+  color: #4f4c4c;
   font-weight: bold;
   font-size: 1.4rem;
 }
@@ -427,6 +455,10 @@ footer {
 
 /* User Profile */
 
+#login_button,#register_button{
+  border-radius: 2rem;
+}
+
 .avatar-profile {
   height: 16rem;
   width: 16rem;
@@ -496,7 +528,7 @@ footer {
 #sidebar {
   min-width: 100%;
   max-width: 100%;
-  background: #232f3e;
+  background: #241571;
   color: #fff;
   transition: all 0.3s;
 }
@@ -506,11 +538,11 @@ footer {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #232f3e;
+  background: #241571;
 }
 #sidebar ul.components {
   padding: 5px 0px;
-  border-bottom: 1px solid #232f3e;
+  border-bottom: 1px solid #241571;
 }
 
 #sidebar ul li a {
@@ -521,7 +553,7 @@ footer {
   text-decoration: none;
 }
 #sidebar ul li a:hover {
-  color: #232f3e;
+  color: #241571;
   background: #fff;
 }
 
@@ -537,7 +569,7 @@ footer {
 #sidebar ul li.active > a,
 a[aria-expanded='true'] {
   color: #fff;
-  background: #232f3e;
+  background: #241571;
 }
 a[data-toggle='collapse'] {
   position: relative;
@@ -553,7 +585,7 @@ a[data-toggle='collapse'] {
 ul ul a {
   font-size: 1rem !important;
   padding-left: 30px !important;
-  background: #232f3e;
+  background: #241571;
 }
 
 ul.CTAs {
@@ -635,11 +667,11 @@ ul.CTAs a {
   
 
   body, html {
-    background-color: #f5f5f5;
+    background-color: #FFF7F7;
   }
 
   nav {
-    background-color: #232f3e;
+    background-color: #241571;
     padding: 1rem 1rem;
   }
 
@@ -653,6 +685,7 @@ ul.CTAs a {
     height: 2.4rem;
     padding: 1rem;
   }
+
 
   .input-group {
     width: 90%;
@@ -725,7 +758,7 @@ ul.CTAs a {
 
   footer {
     color: white; /* Set the text color to white */
-    background-color: #063c7f;
+    background-color: #241571;
     bottom: 0;
     width: 100%;
   }
@@ -781,7 +814,9 @@ ul.CTAs a {
   }
   
   #card_item_price {
-    color: #febd69;
+    color: #6CA6CD
+
+;
     font-weight: bold;
     font-size: 1.4rem;
   }

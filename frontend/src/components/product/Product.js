@@ -11,7 +11,7 @@ export default function Product ({product, col}) {
                 alt={product.name}
                 />}
                 <div className="card-body d-flex flex-column">
-                <h5 className="card-title">
+                <h5 className="card-title ">
                     <Link to={`/product/${product._id}`}>{product.name}</Link>
                 </h5>
                 <div className="ratings mt-auto">
