@@ -101,7 +101,7 @@ export default function UserList() {
             <Sidebar />
           </div>
           <div className="col-12 col-md-10">
-            <h1 className="my-4">User List</h1>
+            <h1 className="my-4 redtext">User List</h1>
             <div className="table-responsive">
               <div className="mobile-table-container">
                 {loading ? (

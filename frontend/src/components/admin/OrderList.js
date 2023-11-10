@@ -102,7 +102,7 @@ export default function OrderList() {
         <Sidebar />
       </div>
       <div className="col-12 col-md-10 col-sm-12">
-        <h1 className="my-4">Order List</h1>
+        <h1 className="my-4 redtext">Order List</h1>
         <Fragment>
           {loading ? <Loader /> :
             <MDBDataTable

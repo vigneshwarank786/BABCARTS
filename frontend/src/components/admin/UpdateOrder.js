@@ -72,7 +72,7 @@ export default function UpdateOrder () {
     
                             <h1 className="my-5">Order # {orderDetail._id}</h1>
     
-                            <h4 className="mb-4">Shipping Info</h4>
+                            <h4 className="mb-4 redtext">Shipping Info</h4>
                             <p><b>Name:</b> {user.name}</p>
                             <p><b>Phone:</b> {shippingInfo.phoneNo}</p>
                             <p className="mb-4"><b>Address:</b>{shippingInfo.address}, {shippingInfo.city}, {shippingInfo.postalCode}, {shippingInfo.state}, {shippingInfo.country}</p>
@@ -80,15 +80,15 @@ export default function UpdateOrder () {
     
                             <hr />
     
-                            <h4 className="my-4">Payment</h4>
+                            <h4 className="my-4 redtext">Payment</h4>
                             <p className={isPaid ? 'greenColor' : 'redColor' } ><b>{isPaid ? 'PAID' : 'NOT PAID' }</b></p>
     
     
-                            <h4 className="my-4">Order Status:</h4>
+                            <h4 className="my-4 redtext">Order Status:</h4>
                             <p className={orderStatus&&orderStatus.includes('Delivered') ? 'greenColor' : 'redColor' } ><b>{orderStatus}</b></p>
     
     
-                            <h4 className="my-4">Order Items:</h4>
+                            <h4 className="my-4 redtext">Order Items:</h4>
     
                             <hr />
                             <div className="cart-item my-1">
@@ -104,7 +104,7 @@ export default function UpdateOrder () {
 
 
                                         <div className="col-4 col-lg-2 mt-4 mt-lg-0">
-                                            <p>${item.price}</p>
+                                            <p>{item.price}AED</p>
                                         </div>
 
                                         <div className="col-4 col-lg-3 mt-4 mt-lg-0">

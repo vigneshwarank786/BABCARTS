@@ -21,6 +21,8 @@ export default function ProductSearch() {
   const [price, setPrice] = useState([1, 1000]);
   const [priceChanged, setPriceChanged] = useState(price);
   const [category, setCategory] = useState(null);
+  const [activeCategory, setActiveCategory] = useState(null);
+
   let [rating, setRating] = useState(0);
 
   const { keyword } = useParams();
@@ -103,16 +105,16 @@ export default function ProductSearch() {
                 {/* Category Filter */}
                 <div className="mt-5">
                   <h3 className="mb-3 filters">Categories</h3>
-                  <ul className="pl-0">
+                  <ul className="pl-0 category">
                     {categories.map((category) => (
                       <li
-                        style={{
-                          cursor: "pointer",
-                          listStyleType: "none",
-                        }}
+          
                         key={category}
+                        className={activeCategory === category ? 'active' : ''}
+
                         onClick={() => {
                           setCategory(category);
+                          setActiveCategory(category);
                         }}
                       >
                         {category}

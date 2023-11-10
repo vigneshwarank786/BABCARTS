@@ -40,7 +40,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
             <div className="row wrapper"> 
                 <div className="col-10 col-lg-5">
                     <form onSubmit={submitHandler} className="shadow-lg">
-                        <h1 className="mb-3 ">Login</h1>
+                        <h1 className="mb-3 redtext">Login</h1>
                         <div className="form-group">
                         <label htmlFor="email_field">Email</label>
                         <input

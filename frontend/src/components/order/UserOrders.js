@@ -69,7 +69,7 @@ export default function UserOrders() {
   return (
     <Fragment>
       <MetaData title="My Orders" />
-      <h1 className="mt-5">My Orders</h1>
+      <h1 className="mt-5 redtext">My Orders</h1>
       <div className="table-responsive">
         <div className="mobile-table-container">
           <MDBDataTable className="px-3" bordered striped hover data={setOrders()} />

@@ -106,7 +106,7 @@ export default function NewProduct() {
               className="shadow-lg"
               encType="multipart/form-data"
             >
-              <h1 className="mb-4">New Product</h1>
+              <h1 className="mb-4 redtext">New Product</h1>
 
               <div className="form-group">
                 <label htmlFor="name_field">Name</label>

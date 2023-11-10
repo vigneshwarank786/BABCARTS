@@ -106,7 +106,7 @@ export default function ReviewList() {
             <Sidebar />
           </div>
           <div className="col-12 col-md-10">
-            <h1 className="my-4">Review List</h1>
+            <h1 className="my-4 redtext">Review List</h1>
             <div className="row justify-content-center mt-5">
               <div className="col-12 col-md-5">
                 <form onSubmit={submitHandler}>

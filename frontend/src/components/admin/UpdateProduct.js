@@ -135,7 +135,7 @@ export default function UpdateProduct () {
                 <Fragment>
                     <div className="wrapper my-5"> 
                         <form onSubmit={submitHandler} className="shadow-lg" encType='multipart/form-data'>
-                            <h1 className="mb-4">Update Product</h1>
+                            <h1 className="mb-4 redtext">Update Product</h1>
 
                             <div className="form-group">
                             <label htmlFor="name_field">Name</label>

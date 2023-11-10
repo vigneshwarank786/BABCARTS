@@ -66,7 +66,7 @@ export default function UpdateProfile () {
     <div className="row wrapper">
         <div className="col-10 col-lg-5">
             <form onSubmit={submitHandler} className="shadow-lg" encType='multipart/form-data'>
-                <h1 className="mt-2 mb-5">Update Profile</h1>
+                <h1 className="mt-2 mb-5 redtext">Update Profile</h1>
 
                 <div className="form-group">
                     <label htmlFor="email_field">Name</label>

@@ -38,6 +38,7 @@ import UpdateOrder from './components/admin/UpdateOrder';
 import UserList from './components/admin/UserList';
 import UpdateUser from './components/admin/UpdateUser';
 import ReviewList from './components/admin/ReviewList';
+import CustomCursor from './CustomCursor';
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("")
@@ -53,6 +54,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <CustomCursor/>
         <HelmetProvider>
             <Header/>
                 <div className='container container-fluid'>

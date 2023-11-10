@@ -110,7 +110,7 @@ export default function Payment() {
     <div className="row wrapper">
       <div className="col-10 col-lg-5">
         <form onSubmit={submitHandler} className="shadow-lg">
-          <h1 className="mb-4">Card Info</h1>
+          <h1 className="mb-4 redtext">Card Info</h1>
           <div className="form-group">
             <label htmlFor="card_num_field">Card Number</label>
             <CardNumberElement

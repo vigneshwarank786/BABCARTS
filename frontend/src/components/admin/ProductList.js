@@ -102,7 +102,7 @@ export default function ProductList() {
       <Sidebar />
     </div>
     <div className="col-12 col-md-10">
-      <h1 className="my-4">Product List</h1>
+      <h1 className="my-4 redtext">Product List</h1>
       <div className="table-responsive">
         <div className="mobile-table-container">
           {loading ? (

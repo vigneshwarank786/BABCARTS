@@ -23,13 +23,13 @@ export default function ConfirmOrder () {
             totalPrice
         }
         sessionStorage.setItem('orderInfo', JSON.stringify(data))
-        navigate('/payment')
+        navigate('/payment');
     }
 
 
     useEffect(()=>{
         validateShipping(shippingInfo, navigate)
-    },[navigate])
+    },[shippingInfo,navigate])
 
     return (
         <Fragment>
@@ -38,7 +38,7 @@ export default function ConfirmOrder () {
             <div className="row d-flex justify-content-between">
             <div className="col-12 col-lg-8 mt-5 order-confirm">
 
-                <h4 className="mb-3">Shipping Info</h4>
+                <h4 className="mb-3 redtext">Shipping Info</h4>
                 <p><b>Name:</b> {user.name}</p>
                 <p><b>Phone:</b> {shippingInfo.phoneNo}</p>
                 <p className="mb-4"><b>Address:</b> {shippingInfo.address}, {shippingInfo.city}, {shippingInfo.postalCode}, {shippingInfo.state}, {shippingInfo.country} </p>

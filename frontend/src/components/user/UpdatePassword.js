@@ -42,7 +42,7 @@ export default function UpdatePassword() {
         <div className="row wrapper">
             <div className="col-10 col-lg-5">
                 <form onSubmit={submitHandler} className="shadow-lg">
-                    <h1 className="mt-2 mb-5">Update Password</h1>
+                    <h1 className="mt-2 mb-5 redtext">Update Password</h1>
                     <div className="form-group">
                         <label htmlFor="old_password_field">Old Password</label>
                         <input
