@@ -5,7 +5,7 @@ export default function Profile () {
     const { user }  = useSelector(state => state.authState);
 
     return (
-        <div className="row justify-content-around mt-5 user-info">
+        <div className="row justify-content-around mt-5 user-info  mb-4">
             <div className="col-12 col-md-3">
                 <figure className='avatar avatar-profile'>
                     <img className="rounded-circle img-fluid" src={user.avatar??'./images/default_avatar.png'} alt='' />

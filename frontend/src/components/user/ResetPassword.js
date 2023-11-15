@@ -42,7 +42,7 @@ export default function ResetPassword() {
 
     return (
         <div className="row wrapper">
-            <div className="col-10 col-lg-5">
+            <div className="col-10 col-lg-5  mb-4">
                 <form onSubmit={submitHandler} className="shadow-lg">
                     <h1 className="mb-3">New Password</h1>
 

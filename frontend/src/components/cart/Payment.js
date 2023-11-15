@@ -49,6 +49,8 @@ export default function Payment() {
   }
 
   useEffect(() => {
+    console.log('Payment component rendered'); // Check if this log appears
+
     validateShipping(shippingInfo, navigate);
     if (orderError) {
       toast(orderError, {
@@ -58,7 +60,7 @@ export default function Payment() {
       });
       return;
     }
-  }, []);
+  }, [navigate,dispatch]);
 
   const submitHandler = async (e) => {
     e.preventDefault();

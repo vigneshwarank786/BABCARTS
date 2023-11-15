@@ -1,0 +1,339 @@
+.bg-images {
+    background-image: url('../../../public/images/about/Rectangle\ 2.png');
+    background-size: cover;
+    background-position: center center;
+    height: 348px;
+    width: 1200px;
+    border-radius: 30px;
+    margin: auto;
+  }
+  
+  .about-uss {
+    font-family: 'Sansita', sans-serif;
+    font-size: 5.5rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .containers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .columns {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .image-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .back-images {
+    position: absolute;
+    top: 3%;
+    left: 12%;
+    width: 70%;
+    z-index: -1;
+    height: 500px;
+    border-radius: 150px;
+  }
+  
+  .titles {
+    font-family: "Sansita", sans-serif;
+    color: #f54758;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  .subtitles {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .card-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rowcardss {
+    display: flex;
+    gap: 150px;
+  }
+  
+  .cards {
+    width: 353px;
+    height: 350px;
+    margin: 10px;
+  }
+  
+  .card-headers {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .circles {
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-image: linear-gradient(to bottom, #1720ff, #ff1717) 1;
+    border-image-slice: 1;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .small-images {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .card-bodies {
+    padding: 10px;
+  }
+  
+  .card-images {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-containers {
+    flex-direction: column;
+  }
+  
+  .card-titles {
+    font-family: "Sansita", sans-serif;
+    color: #f54758;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .card-subtitles {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .card-headtitles,
+  .footerheads {
+    font-family: 'Sansita';
+    color: #f54758;
+    font-weight: bold;
+  }
+  
+  /* ...Media Queries (rest of your existing media queries) ... */
+  
+  
+  @media only screen and (max-width: 767px) {
+   
+  
+    .bg-images {
+      height: 250px;
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .about-uss {
+  font-size: 3.5rem;
+    }
+  
+    .columns {
+      display:contents;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .image-containers {
+      height: auto;
+    }
+  
+    .back-images {
+      position: absolute;
+      top: 0;
+      left: 5%;
+      width: 90%;
+      z-index: -1;
+      height: 70%;
+      border-radius: 150px;
+    }
+  
+    .front-images {
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .titles {
+      font-size: 1.8rem;
+    }
+  
+    .subtitles {
+      font-size: 0.7rem;
+      font-weight: bold;
+       }
+  
+    .rowcardss {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .cards {
+      width: 95%;
+      height: auto;
+    }
+  
+    .card-headers {
+      padding: 5px;
+    }
+  
+    .card-titles {
+      font-size: 1.5rem;
+    }
+  
+    .card-subtitles {
+      font-size: 0.7rem;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+    .bg-images {
+      height: 300px;
+      width: 100%;
+      border-radius: 0;
+    }
+    
+    .about-uss {
+  font-size: 5rem;
+    }
+    
+    .columns {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    
+    .image-containers {
+      height: 500px;
+    }
+    
+    .back-images {
+      position: absolute;
+      top: 0;
+      left: 5%;
+      width: 90%;
+      z-index: -1;
+      height: 70%;
+      border-radius: 150px;
+    }
+    
+    .front-images {
+      height: 90%;
+      max-width: 100%;
+    }
+    
+    .titles {
+      font-size: 2.5rem;
+    }
+    
+    .subtitles {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    
+    .rowcardss {
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    
+    .cards {
+      width: 300px;
+      height: 300px;
+    }
+  
+    
+    .card-titles {
+      font-size: 1.8rem;
+    }
+    
+    
+  }
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+     
+      .bg-images {
+        height: 348px;
+        width: 100%;
+        border-radius: 0;
+      }
+    
+      .about-uss {
+        font-size: 120px;
+      }
+    
+      .titles {
+        font-size: 2.8rem;
+      }
+    
+      .subtitles {
+        font-size: 1.8rem;
+      }
+    
+      .rowcardss {
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+    
+      .cards {
+        width: 300px;
+        height: 300px;
+      }
+    
+      .card-titles {
+        font-size: 1.8rem;
+      }
+    }
+    
+    
+    @media only screen and (max-width: 320px) {
+      .titles {
+        font-size: 1.3rem;
+      }
+    
+      .subtitles {
+        font-size: 0.5rem;
+      }
+    
+      .rowcardss {
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+    
+      .cards {
+        width: 100%;
+        height: auto;
+      }
+    
+      .card-titles {
+        font-size: 1rem;
+      }
+    
+      .card-subtitles {
+        font-size: 0.7rem;
+      }
+    }
+  

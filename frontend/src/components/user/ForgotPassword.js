@@ -38,9 +38,9 @@ export default function ForgotPassword() {
 
     return (
         <div className="row wrapper">
-            <div className="col-10 col-lg-5">
+            <div className="col-10 col-lg-5  mb-4">
                 <form onSubmit={submitHandler} className="shadow-lg">
-                    <h1 className="mb-3">Forgot Password</h1>
+                    <h1 className="mb-3 redtext">Forgot Password</h1>
                     <div className="form-group">
                         <label htmlFor="email_field">Enter Email</label>
                         <input

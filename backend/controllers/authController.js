@@ -3,7 +3,9 @@ const User = require('../models/userModel');
 const sendEmail = require('../utils/email');
 const ErrorHandler = require('../utils/errorHandler');
 const sendToken = require('../utils/jwt');
-const crypto = require('crypto')
+const crypto = require('crypto');
+const nodemailer = require('nodemailer');
+
 
 //Register User - /api/v1/register
 exports.registerUser = catchAsyncError(async (req, res, next) => {
@@ -245,3 +247,45 @@ exports.deleteUser = catchAsyncError(async (req, res, next) => {
         success: true,
     })
 })
+
+
+exports.contactform=catchAsyncError(async (req, res) => {
+    const { fullName, phoneNumber, email, country, selectedProduct, message } = req.body;
+  
+    try {
+      // Create reusable transporter object using the default SMTP transport
+      let transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
+  
+      // Compose the email
+      let mailOptions = {
+        from: email,
+        to: 'vw8899257@gmail.com', // Destination email address
+        subject: 'New Contact Form Submission',
+        html: `
+          <h3>Contact Details:</h3>
+          <p>Full Name: ${fullName}</p>
+          <p>Phone Number: ${phoneNumber}</p>
+          <p>Email: ${email}</p>
+          <p>Country: ${country}</p>
+          <p>Selected Product: ${selectedProduct}</p>
+          <p>Message: ${message}</p>
+        `,
+      };
+  
+      // Send the email
+      let info = await transporter.sendMail(mailOptions);
+  
+      console.log('Email sent: ', info.response);
+      res.status(200).json({ message: 'Email sent successfully' });
+    } catch (error) {
+      console.error('Error occurred while sending email: ', error.message);
+      res.status(500).json({ error: 'Failed to send email' });
+    }
+  });

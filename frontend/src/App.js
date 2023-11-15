@@ -39,6 +39,9 @@ import UserList from './components/admin/UserList';
 import UpdateUser from './components/admin/UpdateUser';
 import ReviewList from './components/admin/ReviewList';
 import CustomCursor from './CustomCursor';
+import Aboutus from './components/about/Aboutus';
+import Contact from './components/contact/Contact';
+
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("")
@@ -61,6 +64,9 @@ function App() {
                   <ToastContainer theme='dark' />
                   <Routes>
                       <Route path='/' element={<Home/>} />
+                      <Route path='/about' element={<Aboutus/>} />
+                      <Route path='/contact' element={<Contact/>} />
+
                       <Route path='/search/:keyword' element={<ProductSearch/>} />
                       <Route path='/product/:id' element={<ProductDetail/>} />
                       <Route path='/login' element={<Login/>} />
@@ -76,8 +82,17 @@ function App() {
                       <Route path='/order/success' element={<ProtectedRoute><OrderSuccess/></ProtectedRoute> } />
                       <Route path='/orders' element={<ProtectedRoute><UserOrders/></ProtectedRoute> } />
                       <Route path='/order/:id' element={<ProtectedRoute><OrderDetail/></ProtectedRoute> } />
-                      {stripeApiKey && <Route path='/payment' element={<ProtectedRoute><Elements stripe={loadStripe(stripeApiKey)}><Payment/></Elements></ProtectedRoute> } />
-} 
+                      <Route
+    path='/payment'
+    element={
+        <ProtectedRoute>
+            <Elements stripe={loadStripe(stripeApiKey)}>
+                <Payment/>
+            </Elements>
+        </ProtectedRoute>
+    }
+/>
+
                   </Routes>
                 </div>
                 {/* Admin Routes */}

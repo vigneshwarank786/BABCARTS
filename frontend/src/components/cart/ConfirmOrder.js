@@ -22,9 +22,10 @@ export default function ConfirmOrder () {
             taxPrice,
             totalPrice
         }
-        sessionStorage.setItem('orderInfo', JSON.stringify(data))
+        sessionStorage.setItem('orderInfo', JSON.stringify(data)); // Check if data is correctly set
         navigate('/payment');
     }
+    
 
 
     useEffect(()=>{
@@ -46,9 +47,9 @@ export default function ConfirmOrder () {
                 <hr />
                 <h4 className="mt-4">Your Cart Items:</h4>
 
-                    {cartItems.map(item => (
-                            <Fragment>
-                                <div className="cart-item my-1">
+                {cartItems.map((item, index) => (
+    <Fragment key={index}>
+    <div className="cart-item my-1">
                                     <div className="row">
                                         <div className="col-4 col-lg-2">
                                             <img src={item.image} alt={item.name} height="45" width="65" />

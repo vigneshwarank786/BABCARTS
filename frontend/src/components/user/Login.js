@@ -38,7 +38,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
         <Fragment>
             <MetaData title={`Login`} />
             <div className="row wrapper"> 
-                <div className="col-10 col-lg-5">
+                <div className="col-10 col-lg-5 mb-4">
                     <form onSubmit={submitHandler} className="shadow-lg">
                         <h1 className="mb-3 redtext">Login</h1>
                         <div className="form-group">

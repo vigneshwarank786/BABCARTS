@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <nav className="navbar row">
-            <div className="col-12 col-md-3">
+            <div className="col-12 col-md-2">
                 <div className="navbar-brand">
                     <Link to="/">
                         <img width="150px" alt='JVLcart Logo' src="/images/logo.png" />
@@ -24,7 +24,16 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="col-12 col-md-6 mt-2 mt-md-0">
+            <div className="col-12 col-md-2">
+            <Link to="/" id="cart" className="ml-3">Home</Link>
+
+<Link to="/about" id="cart" className="ml-3">About</Link>
+<Link to="/contact" id="cart" className="ml-3">Contact</Link>
+</div>
+            
+
+
+            <div className="col-12 col-md-5 mt-2 mt-md-0">
                 <Search />
             </div>
 
@@ -50,6 +59,9 @@ export default function Header() {
                 ) : (
                     <Link to="/login" className="btn" id="login_btn">Login</Link>
                 )}
+                                         
+
+
                 <Link to="/cart"><span id="cart" className="ml-3">Cart</span></Link>
                 <Link to="/cart"><span className="ml-1" id="cart_count">{cartItems.length}</span></Link>
             </div>

@@ -24,13 +24,16 @@ const {
     getAllUsers,
     getUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    contactform
  } = require('../controllers/authController');
 const router = express.Router();
 const { isAuthenticatedUser, authorizeRoles } = require('../middlewares/authenticate')
 
 router.route('/register').post(upload.single('avatar'), registerUser);
 router.route('/login').post(loginUser);
+router.route('/contact').post(contactform);
+
 router.route('/logout').get(logoutUser);
 router.route('/password/forgot').post(forgotPassword);
 router.route('/password/reset/:token').post(resetPassword);
