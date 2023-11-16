@@ -41,6 +41,7 @@ import ReviewList from './components/admin/ReviewList';
 import CustomCursor from './CustomCursor';
 import Aboutus from './components/about/Aboutus';
 import Contact from './components/contact/Contact';
+import SimpleChatbot from './components/SimpleChatbot';
 
 
 function App() {
@@ -108,6 +109,7 @@ function App() {
                   <Route path='/admin/reviews' element={ <ProtectedRoute isAdmin={true}><ReviewList/></ProtectedRoute> } />
                 </Routes>
             <Footer/>
+            <SimpleChatbot />
         </HelmetProvider>
       </div>
     </Router>
