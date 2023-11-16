@@ -135,8 +135,8 @@ const buttonStyle = {
   color: '#fff',
   border: 'none',
   borderRadius: '50%',
-  width: '60px',
-  height: '60px',
+  width: '50px',
+  height: '50px',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
@@ -167,8 +167,8 @@ const mobileButtonStyle = {
   color: '#fff',
   border: 'none',
   borderRadius: '50%',
-  width: '50px',
-  height: '50px',
+  width: '40px',
+  height: '40px',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
@@ -193,7 +193,7 @@ return (
   <ThemeProvider theme={theme}>
     <div>
       {showChatbot && (
-        <div style={{ position: 'fixed', bottom: '90px', right: '20px', zIndex: '1000' }}>
+        <div style={{ position: 'fixed', bottom: '55px', right: '20px', zIndex: '1000' }}>
           <ChatBot steps={steps} handleEnd={handleEnd} />
         </div>
       )}
