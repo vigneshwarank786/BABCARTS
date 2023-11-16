@@ -136,15 +136,18 @@ function SimpleChatbot() {
   
   const iconStyle = {
     fontSize: '24px',
+    color:'black'
   };
   
   const buttonHover = {
     background: '#5567FF',
     transform: 'scale(1.05)',
   };
-  
-  return (
-    <ThemeProvider theme={theme}>
+// ... (existing code)
+// ... (existing code)
+
+return (
+  <ThemeProvider theme={theme}>
     <div>
       {showChatbot && (
         <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}>
@@ -154,12 +157,15 @@ function SimpleChatbot() {
       <button
         onClick={handleToggleChatbot}
         style={showChatbot ? { ...buttonStyle, ...buttonHover } : buttonStyle}
+        aria-label="Toggle Chatbot"
       >
-        <i className="fas fa-robot" style={iconStyle}></i>
+        {/* Adjust the icon classes */}
+        <i className="fa fa-android fa-lg" style={iconStyle}></i>
       </button>
     </div>
   </ThemeProvider>
 );
-}
+
+      };
 
 export default SimpleChatbot;
