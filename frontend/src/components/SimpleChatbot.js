@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRobot } from '@fortawesome/free-solid-svg-icons';
 
 function SimpleChatbot() {
     const [showChatbot, setShowChatbot] = useState(false);
@@ -147,21 +145,21 @@ function SimpleChatbot() {
   
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        {showChatbot && (
-          <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}>
-            <ChatBot steps={steps} handleEnd={handleEnd} />
-          </div>
-        )}
-        <button
-          onClick={handleToggleChatbot}
-          style={showChatbot ? { ...buttonStyle, ...buttonHover } : buttonStyle}
-        >
-          <FontAwesomeIcon icon={faRobot} style={iconStyle} />
-        </button>
-      </div>
-    </ThemeProvider>
-  );
+    <div>
+      {showChatbot && (
+        <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}>
+          <ChatBot steps={steps} handleEnd={handleEnd} />
+        </div>
+      )}
+      <button
+        onClick={handleToggleChatbot}
+        style={showChatbot ? { ...buttonStyle, ...buttonHover } : buttonStyle}
+      >
+        <i className="fas fa-robot" style={iconStyle}></i>
+      </button>
+    </div>
+  </ThemeProvider>
+);
 }
 
 export default SimpleChatbot;
