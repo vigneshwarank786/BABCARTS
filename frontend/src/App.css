@@ -63,6 +63,10 @@ nav {
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  font-weight: bold;
+    border: none;
+    border-radius: 20px;
+
 }
 
 #login_btn:hover,
@@ -113,7 +117,14 @@ nav {
 /* Home page */
 #products_heading {
   margin-top: 1.8rem;
+  text-align: center;
+
   font-family: 'Sansita', sans-serif;
+}
+
+.productshead{
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .category {
@@ -201,6 +212,10 @@ nav {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
+    border: none;
+    border-radius: 20px;
+
 }
 
 #view_btn:hover {
@@ -420,14 +435,14 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-
-  font-weight: 700;
+font-weight: 700;
 }
 
 .wrapper form {
   padding: 2.5rem 3rem;
   background-color: #2c1c77;
   color: #FFF7F7;
+  width: 90%;
 }
 
 .wrapper form .btn {
@@ -1071,6 +1086,7 @@ footer ul li i {
   
   .wrapper form {
     padding: 2.5rem 3rem;
+    width: 100%;
   }
   
   .wrapper form .btn {

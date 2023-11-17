@@ -61,7 +61,7 @@ function App() {
         <CustomCursor/>
         <HelmetProvider>
             <Header/>
-                <div className='container container-fluid'>
+                <div className='container-fluid'>
                   <ToastContainer theme='dark' />
                   <Routes>
                       <Route path='/' element={<Home/>} />
