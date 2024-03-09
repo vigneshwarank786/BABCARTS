@@ -21,7 +21,7 @@ export let getProducts = (keyword, price, category, rating, currentPage) => asyn
             link += `&ratings=${rating}`
         }
         
-        let { data }  =  await axios.get(link);
+        let { data }  =  await axios.get(`https://babcarts-1.onrender.com${link}`);
         dispatch(productsSuccess(data))
     } catch (error) {
         //handle error
@@ -35,7 +35,7 @@ export let getProduct = id => async (dispatch) => {
 
     try {  
         dispatch(productRequest()) 
-        let { data }  =  await axios.get(`/api/v1/product/${id}`);
+        let { data }  =  await axios.get(`https://babcarts-1.onrender.com/api/v1/product/${id}`);
         dispatch(productSuccess(data))
     } catch (error) {
         //handle error
@@ -53,7 +53,7 @@ export let createReview = reviewData => async (dispatch) => {
                 'Content-type': 'application/json'
             }
         }
-        let { data }  =  await axios.put(`/api/v1/review`,reviewData, config);
+        let { data }  =  await axios.put(`https://babcarts-1.onrender.com/api/v1/review`,reviewData, config);
         dispatch(createReviewSuccess(data))
     } catch (error) {
         //handle error
@@ -66,7 +66,7 @@ export let getAdminProducts  =  async (dispatch) => {
 
     try {  
         dispatch(adminProductsRequest()) 
-        let { data }  =  await axios.get(`/api/v1/admin/products`);
+        let { data }  =  await axios.get(`https://babcarts-1.onrender.com/api/v1/admin/products`);
         dispatch(adminProductsSuccess(data))
     } catch (error) {
         //handle error
@@ -79,7 +79,7 @@ export let createNewProduct  =  productData => async (dispatch) => {
 
     try {  
         dispatch(newProductRequest()) 
-        let { data }  =  await axios.post(`/api/v1/admin/product/new`, productData);
+        let { data }  =  await axios.post(`https://babcarts-1.onrender.com/api/v1/admin/product/new`, productData);
         dispatch(newProductSuccess(data))
     } catch (error) {
         //handle error
@@ -92,7 +92,7 @@ export let deleteProduct  =  id => async (dispatch) => {
 
     try {  
         dispatch(deleteProductRequest()) 
-        await axios.delete(`/api/v1/admin/product/${id}`);
+        await axios.delete(`https://babcarts-1.onrender.com/api/v1/admin/product/${id}`);
         dispatch(deleteProductSuccess())
     } catch (error) {
         //handle error
@@ -105,7 +105,7 @@ export let updateProduct  =  (id, productData) => async (dispatch) => {
 
     try {  
         dispatch(updateProductRequest()) 
-        let { data }  =  await axios.put(`/api/v1/admin/product/${id}`, productData);
+        let { data }  =  await axios.put(`https://babcarts-1.onrender.com/api/v1/admin/product/${id}`, productData);
         dispatch(updateProductSuccess(data))
     } catch (error) {
         //handle error
@@ -119,7 +119,7 @@ export let getReviews =  id => async (dispatch) => {
 
     try {  
         dispatch(reviewsRequest()) 
-        let { data }  =  await axios.get(`/api/v1/admin/reviews`,{params: {id}});
+        let { data }  =  await axios.get(`https://babcarts-1.onrender.com/api/v1/admin/reviews`,{params: {id}});
         dispatch(reviewsSuccess(data))
     } catch (error) {
         //handle error
@@ -132,7 +132,7 @@ export let deleteReview =  (productId, id) => async (dispatch) => {
 
     try {  
         dispatch(deleteReviewRequest()) 
-        await axios.delete(`/api/v1/admin/review`,{params: {productId, id}});
+        await axios.delete(`https://babcarts-1.onrender.com/api/v1/admin/review`,{params: {productId, id}});
         dispatch(deleteReviewSuccess())
     } catch (error) {
         //handle error
