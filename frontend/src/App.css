@@ -323,31 +323,9 @@ nav {
   color: green;
 }
 
-/* CSS for responsive product images */
-/* CSS for responsive product images */
-#product_image .carousel .carousel-inner .carousel-item img {
-  max-width: 100%; /* Ensure images don't exceed their container */
-  height: auto; /* Allow the image height to adjust based on width */
-  max-height: 600px; /* Set a maximum height for the images */
-  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+#product_image {
+  margin-top: 9rem;
 }
-
-.custom-link {
-  font-size: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Sansita', sans-serif;
-
-
-}
-
-
-.custom-link:hover {
-  color: #d15e3b; /* Change this to your preferred color */
-}
-
-
-
 
 /* Loader */
 .loader {

@@ -27,16 +27,7 @@ export default function Cart() {
     return (
         <Fragment>
             {items.length===0 ? 
-                <div className="container-fluid">
-                <div className="row justify-content-center align-items-center" style={{ minHeight: '60vh' }}>
-                  <div className="col-md-6 text-center">
-                    <h2 className="mt-5 empty-cart-text">Your Cart is Empty</h2>
-                    <Link to={'/'} className="custom-link">
-                      Please Choose Your Products
-                    </Link>
-                  </div>
-                </div>
-              </div> :
+                <h2 className="mt-5">Your Cart is Empty</h2> :
                 <Fragment>
                      <h2 className="mt-5">Your Cart: <b>{items.length} items</b></h2>
                     <div className="row d-flex justify-content-between">
