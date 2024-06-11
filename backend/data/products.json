@@ -1,16 +1,16 @@
 [
     {
-        "name": "Puck Cream Cheese",
+        "name": "Samsung Galaxy S20",
         "price": 10,
-        "description": "Ingredients. Cream cheese (pasteurized raw cow's milk, lactic acid starter culture), palm oil, salt, emulsifier salt (E339). No rennet or preservatives added. ...",
+        "description": "The Samsung Galaxy S20 features a stunning display, powerful camera system, and fast performance. With its sleek design and cutting-edge features, it's a top choice for smartphone enthusiasts.",
         "ratings": "0",
         "images": [
             {
-                "image": "http://34.224.21.224:8000/uploads/product/puck cream cheese.png"
+                "image": "http://34.224.21.224:8000/uploads/product/samsung_galaxy_s20.png"
             }
         ],
-        "category": "Dairy Products",
-        "seller": "Babsindh",
+        "category": "Phones",
+        "seller": "sparrow",
         "stock": 8,
         "numOfReviews": 0,
         "user": "653d3ee8af385f43f88f2703",
@@ -18,16 +18,16 @@
         "__v": 0
     },
     {
-        "name": "mara baked beans",
+        "name": "Apple Watch Series 6",
         "price": 8,
-        "description": "Mara Baked Beans in Tomato Sauce is ready to eat baked beans is a combination of the flavorful recipes and the best-baked beans in the world, ready for you to open and enjoy. The use of only white lacquered cans enables us to seal in freshness.",
+        "description": "The Apple Watch Series 6 is a powerful wearable device that tracks your health, keeps you connected, and helps you stay organized. With its advanced features and stylish design, it's the ultimate smartwatch for tech-savvy users.",
         "ratings": "0",
         "images": [
             {
-                "image": "http://34.224.21.224:8000/uploads/product/mara baked beans.png"
+                "image": "http://34.224.21.224:8000/uploads/product/apple_watch_series_6.png"
             }
         ],
-        "category": "Canned Foods",
+        "category": "Watches",
         "seller": "edigroups",
         "stock": 3,
         "numOfReviews": 0,
@@ -36,17 +36,17 @@
         "__v": 0
     },
     {
-        "name": "cadbury drinking chocolate",
+        "name": "Dell XPS 15",
         "price": 15,
-        "description": " Cadbury Drinking Chocolate powder makes irresistible chocolate milk. Sip it hot, slurp it cold or sprinkle it on any beverage for flavor. This chocolate drink is a favorite of all and is extremely easy to make, as it dissolves instantly.",
+        "description": "The Dell XPS 15 is a high-performance laptop with a stunning display, powerful processor, and sleek design. Whether you're a professional or a student, this laptop is perfect for multitasking, gaming, and productivity.",
         "ratings": "0",
         "images": [
             {
-                "image": "http://34.224.21.224:8000/uploads/product/cadbury drinking chocolate.png"
+                "image": "http://34.224.21.224:8000/uploads/product/dell_xps_15.png"
             }
         ],
-        "category": "Chocolates",
-        "seller": "Babsindh",
+        "category": "Laptops",
+        "seller": "sparrow",
         "stock": 10,
         "numOfReviews": 0,
         "user": "653d3ee8af385f43f88f2703",
@@ -54,54 +54,18 @@
         "__v": 0
     },
     {
-        "name": "kelloks_special_classic",
+        "name": "iPad Pro",
         "price": 25,
-        "description": "Special K® Classic is a source of 7 vitamins, and iron and zinc. Made with rice, whole-wheat and barley, these delicious flakes are a source of protein and fibre – worth waking up for!",
+        "description": "The iPad Pro is a versatile tablet that combines the power of a computer with the portability of a tablet. With its stunning display, powerful processor, and support for the Apple Pencil and Smart Keyboard, it's perfect for work, creativity, and entertainment.",
         "ratings": "0",
         "images": [
             {
-                "image": "http://34.224.21.224:8000/uploads/product/kelloks_special_classic.png"
+                "image": "http://34.224.21.224:8000/uploads/product/ipad_pro.png"
             }
         ],
-        "category": "Breakfast Cereals",
-        "seller": "Babsindh",
+        "category": "Tablets",
+        "seller": "sparrow",
         "stock": 2,
-        "numOfReviews": 0,
-        "user": "653d3ee8af385f43f88f2703",
-        "reviews": [],
-        "__v": 0
-    },
-    {
-        "name": "Nutella",
-        "price": 6,
-        "description": "Nutella is described as a chocolate and hazelnut spread, although it is mostly made of sugar and palm oil. The manufacturing process for this food item is very similar to a generic production of chocolate spread.",
-        "ratings": "0",
-        "images": [
-            {
-                "image": "http://34.224.21.224:8000/uploads/product/nutella-removebg-preview.png"
-            }
-        ],
-        "category": "Sauces and Spreads",
-        "seller": "Babsindh",
-        "stock": 2,
-        "numOfReviews": 0,
-        "user": "653d3ee8af385f43f88f2703",
-        "reviews": [],
-        "__v": 0
-    },
-    {
-        "name": "Mountain Dew",
-        "price": 6,
-        "description": "Original Mountain Dew is a citrus-flavored soda. The soft drink is unique because it includes a small amount of orange juice. While some have compared Mountain Dew to lemon-lime soda, it is antithetically different and unique from them and has spawned many imitators from the Original Mountain Dew.",
-        "ratings": "0",
-        "images": [
-            {
-                "image": "http://34.224.21.224:8000/uploads/product/moutain dew.png"
-            }
-        ],
-        "category": "Juices and Drinks",
-        "seller": "edigroups",
-        "stock": 15,
         "numOfReviews": 0,
         "user": "653d3ee8af385f43f88f2703",
         "reviews": [],

@@ -19,16 +19,13 @@ export default function Header() {
             <div className="col-12 col-md-2">
                 <div className="navbar-brand">
                     <Link to="/">
-                        <img width="150px" alt='JVLcart Logo' src="/images/logo.png" />
+                        <img width="150px" alt='JVLcart Logo' src="/images/home/logo.svg" />
                     </Link>
                 </div>
             </div>
 
             <div className="col-12 col-md-2">
             <Link to="/" id="cart" className="ml-3">Home</Link>
-
-<Link to="/about" id="cart" className="ml-3">About</Link>
-<Link to="/contact" id="cart" className="ml-3">Contact</Link>
 </div>
             
 

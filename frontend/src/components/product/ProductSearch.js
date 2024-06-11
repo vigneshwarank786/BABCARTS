@@ -27,15 +27,16 @@ export default function ProductSearch() {
 
   const { keyword } = useParams();
   const categories = [
-    "Dairy Products",
-    "Canned Foods",
-    "Chocolates",
-    "Breakfast Cereals",
-    "Sauces and Spreads",
-    "Juices and Drinks",
-    "Candy and Mints",
-    "Cooking Ingredients",
-    "Bakery Items",
+    "Phones",
+    "Watches",
+    "Laptops",
+    "Tablets",
+    "Smart Home Devices",
+    "Gaming Consoles",
+    "Audio Equipment",
+    "Wearable Fitness Trackers",
+    "Computer Accessories",
+    "Virtual Reality Headsets",
   ];
 
   const setCurrentPageNo = (pageNo) => {
@@ -51,9 +52,7 @@ export default function ProductSearch() {
   };
 
   const getTooltipOverlay = (value) => {
-    return (
-      <div>{`AED${value}`}</div>
-    );
+    return <div>{`AED${value}`}</div>;
   };
 
   useEffect(() => {
@@ -72,7 +71,9 @@ export default function ProductSearch() {
       ) : (
         <Fragment>
           <MetaData title={"Buy Best Products"} />
-          <h1 id="products_heading">Search <span className="redtext">Products</span></h1>
+          <h1 id="products_heading">
+            Search <span className="redtext">Products</span>
+          </h1>
           <section id="products" className="container mt-5">
             <div className="row">
               <div className="col-6 col-md-3 mb-5 mt-5">
@@ -90,15 +91,15 @@ export default function ProductSearch() {
                     onChange={handlePriceChange}
                     onAfterChange={handlePriceChangeComplete}
                     tipFormatter={(value) => getTooltipOverlay(value)}
-                    handleRender={
-                        renderProps => {
-                            return (
-                                <Tooltip  overlay={`${renderProps.props['aria-valuenow']}`}  >
-                                     <div {...renderProps.props}>  </div>
-                                </Tooltip>
-                            )
-                        }
-                    }
+                    handleRender={(renderProps) => {
+                      return (
+                        <Tooltip
+                          overlay={`${renderProps.props["aria-valuenow"]}`}
+                        >
+                          <div {...renderProps.props}> </div>
+                        </Tooltip>
+                      );
+                    }}
                   />
                 </div>
                 <hr className="my-5" />
@@ -108,10 +109,8 @@ export default function ProductSearch() {
                   <ul className="pl-0 category">
                     {categories.map((category) => (
                       <li
-          
                         key={category}
-                        className={activeCategory === category ? 'active' : ''}
-
+                        className={activeCategory === category ? "active" : ""}
                         onClick={() => {
                           setCategory(category);
                           setActiveCategory(category);

@@ -39,8 +39,6 @@ import UserList from './components/admin/UserList';
 import UpdateUser from './components/admin/UpdateUser';
 import ReviewList from './components/admin/ReviewList';
 import CustomCursor from './CustomCursor';
-import Aboutus from './components/about/Aboutus';
-import Contact from './components/contact/Contact';
 import SimpleChatbot from './components/SimpleChatbot';
 
 
@@ -65,8 +63,7 @@ function App() {
                   <ToastContainer theme='dark' />
                   <Routes>
                       <Route path='/' element={<Home/>} />
-                      <Route path='/about' element={<Aboutus/>} />
-                      <Route path='/contact' element={<Contact/>} />
+                      
 
                       <Route path='/search/:keyword' element={<ProductSearch/>} />
                       <Route path='/product/:id' element={<ProductDetail/>} />

@@ -7,7 +7,7 @@
     "start": "node server.js",
         "dev": "set NODE_ENV=development&&nodemon backend/server.js",
     "prod": "set NODE_ENV=production&& nodemon backend/server.js",
-    "seeder": "node backend/utils/seeder.js"
+    "seeder": "node utils/seeder.js"
   },
   "keywords": [],
   "author": "",
