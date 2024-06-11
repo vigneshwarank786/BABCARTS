@@ -25,7 +25,9 @@ export default function Header() {
             </div>
 
             <div className="col-12 col-md-2">
+            {/* <Link to="/" id="cart" className="ml-3">Home</Link> */}
             <Link to="/" id="cart" className="ml-3">Home</Link>
+
 </div>
             
 
