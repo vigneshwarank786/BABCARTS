@@ -24,10 +24,10 @@ function SimpleChatbot() {
       // Open the chatbot automatically when the component mounts
       setShowChatbot(true);
     }, []); 
-  const steps = [
-    {
+    const steps = [
+      {
         id: '1',
-        message: "👋 Welcome to Bab Sindh! I’m your culinary guide my name Edi. What's your name?",
+        message: "👋 Welcome to Sparrow Cart! I’m Edi, your tech-savvy guide. What's your name?",
         trigger: 'name',
       },
       {
@@ -37,75 +37,83 @@ function SimpleChatbot() {
       },
       {
         id: 'categories',
-        message: 'Hi {previousValue}! Let’s tantalize your taste buds! Pick a category:',
+        message: 'Hi {previousValue}! Ready to explore the latest in technology? Pick a category:',
         trigger: 'categoryOptions',
       },
       {
         id: 'categoryOptions',
         options: [
-          { value: 'dairyProducts', label: 'Dairy Products', trigger: 'dairyProducts' },
-          { value: 'cannedFoods', label: 'Canned Foods', trigger: 'cannedFoods' },
-          { value: 'chocolates', label: 'Chocolates', trigger: 'chocolates' },
-          { value: 'cereals', label: 'Breakfast Cereals', trigger: 'cereals' },
-          { value: 'saucesAndSpreads', label: 'Sauces and Spreads', trigger: 'saucesAndSpreads' },
-          { value: 'juicesAndDrinks', label: 'Juices and Drinks', trigger: 'juicesAndDrinks' },
-          { value: 'candyAndMints', label: 'Candy and Mints', trigger: 'candyAndMints' },
-          { value: 'cookingIngredients', label: 'Cooking Ingredients', trigger: 'cookingIngredients' },
-          { value: 'bakeryItems', label: 'Bakery Items', trigger: 'bakeryItems' },
+          { value: 'phones', label: 'Phones', trigger: 'phones' },
+          { value: 'watches', label: 'Watches', trigger: 'watches' },
+          { value: 'laptops', label: 'Laptops', trigger: 'laptops' },
+          { value: 'tablets', label: 'Tablets', trigger: 'tablets' },
+          { value: 'smartHomeDevices', label: 'Smart Home Devices', trigger: 'smartHomeDevices' },
+          { value: 'gamingConsoles', label: 'Gaming Consoles', trigger: 'gamingConsoles' },
+          { value: 'audioEquipment', label: 'Audio Equipment', trigger: 'audioEquipment' },
+          { value: 'wearableFitnessTrackers', label: 'Wearable Fitness Trackers', trigger: 'wearableFitnessTrackers' },
+          { value: 'computerAccessories', label: 'Computer Accessories', trigger: 'computerAccessories' },
+          { value: 'virtualRealityHeadsets', label: 'Virtual Reality Headsets', trigger: 'virtualRealityHeadsets' },
           { value: 'Contact', label: 'Contact Support', trigger: 'Contact' },
         ],
       },
       {
-        id: 'dairyProducts',
-        message: '🥛 Ah, the world of creamy delights! Explore our range of dairy products.',
+        id: 'phones',
+        message: '📱 Dive into our collection of phones! From the latest models to budget-friendly options, we have something for everyone.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'cannedFoods',
-        message: '🥫 Deliciousness sealed in every can! Check out our variety of canned foods.',
+        id: 'watches',
+        message: '⌚ Discover our range of smart watches! Stay connected, track your health, and make a style statement.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'chocolates',
-        message: '🍫 Indulge in the sweetness of our chocolates!',
+        id: 'laptops',
+        message: '💻 Upgrade your tech game with our laptops! Perfect for gaming, work, or casual browsing, find your next powerhouse here.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'cereals',
-        message: '🥣 Start your day right with our assortment of breakfast cereals!',
+        id: 'tablets',
+        message: '📲 Explore the versatility of our tablets! Great for entertainment, productivity, and everything in between.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'saucesAndSpreads',
-        message: '🍝 Enhance your dishes with our range of sauces and spreads!',
+        id: 'smartHomeDevices',
+        message: '🏠 Make your home smarter with our smart home devices! Enhance security, convenience, and comfort at the touch of a button.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'juicesAndDrinks',
-        message: '🥤 Quench your thirst with our refreshing juices and drinks!',
+        id: 'gamingConsoles',
+        message: '🎮 Enter a new world of gaming with our consoles! From the latest releases to classic favorites, level up your gaming experience.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'candyAndMints',
-        message: '🍬 Satisfy your sweet cravings with our candy and mints collection!',
+        id: 'audioEquipment',
+        message: '🎧 Elevate your sound experience with our audio equipment! Enjoy crystal-clear sound whether you’re at home or on the go.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'cookingIngredients',
-        message: '🌿 Explore our high-quality cooking ingredients for your culinary creations!',
+        id: 'wearableFitnessTrackers',
+        message: '🏃‍♂️ Track your fitness goals with our wearable fitness trackers! Stay motivated and monitor your progress with ease.',
         trigger: 'categoryOptions',
       },
       {
-        id: 'bakeryItems',
-        message: '🥐 Dive into the world of freshly baked bakery items!',
+        id: 'computerAccessories',
+        message: '💻 Optimize your setup with our computer accessories! From keyboards to external drives, enhance your productivity.',
         trigger: 'categoryOptions',
-      },    
+      },
+      {
+        id: 'virtualRealityHeadsets',
+        message: '🕶️ Step into virtual reality with our VR headsets! Experience immersive worlds and cutting-edge technology like never before.',
+        trigger: 'categoryOptions',
+      },
       {
         id: 'Contact',
-        message: 'Thank you for exploring Bab Sindh! For any queries, contact us at sales@babsindh.com or call +971 502084514.',
+        message: 'Thank you for exploring Sparrow Cart! For any queries, reach us at support@techworld.com or call +123 4567890.',
         end: true,
       }
-  ];
+    ];
+    
+      
   
 
   const handleEnd = ({ steps }) => {
