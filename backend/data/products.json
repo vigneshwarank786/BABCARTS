@@ -1,74 +1,254 @@
 [
-    {
-        "name": "Samsung Galaxy S20",
-        "price": 10,
-        "description": "The Samsung Galaxy S20 features a stunning display, powerful camera system, and fast performance. With its sleek design and cutting-edge features, it's a top choice for smartphone enthusiasts.",
-        "ratings": "0",
-        "images": [
-            {
-                "image": "http://34.224.21.224:8000/uploads/product/samsung_galaxy_s20.png"
-            }
-        ],
-        "category": "Phones",
-        "seller": "sparrow",
-        "stock": 8,
-        "numOfReviews": 0,
-        "user": "653d3ee8af385f43f88f2703",
-        "reviews": [],
-        "__v": 0
-    },
-    {
-        "name": "Apple Watch Series 6",
-        "price": 8,
-        "description": "The Apple Watch Series 6 is a powerful wearable device that tracks your health, keeps you connected, and helps you stay organized. With its advanced features and stylish design, it's the ultimate smartwatch for tech-savvy users.",
-        "ratings": "0",
-        "images": [
-            {
-                "image": "http://34.224.21.224:8000/uploads/product/apple_watch_series_6.png"
-            }
-        ],
-        "category": "Watches",
-        "seller": "edigroups",
-        "stock": 3,
-        "numOfReviews": 0,
-        "user": "653d3ee8af385f43f88f2703",
-        "reviews": [],
-        "__v": 0
-    },
-    {
-        "name": "Dell XPS 15",
-        "price": 15,
-        "description": "The Dell XPS 15 is a high-performance laptop with a stunning display, powerful processor, and sleek design. Whether you're a professional or a student, this laptop is perfect for multitasking, gaming, and productivity.",
-        "ratings": "0",
-        "images": [
-            {
-                "image": "http://34.224.21.224:8000/uploads/product/dell_xps_15.png"
-            }
-        ],
-        "category": "Laptops",
-        "seller": "sparrow",
-        "stock": 10,
-        "numOfReviews": 0,
-        "user": "653d3ee8af385f43f88f2703",
-        "reviews": [],
-        "__v": 0
-    },
-    {
-        "name": "iPad Pro",
-        "price": 25,
-        "description": "The iPad Pro is a versatile tablet that combines the power of a computer with the portability of a tablet. With its stunning display, powerful processor, and support for the Apple Pencil and Smart Keyboard, it's perfect for work, creativity, and entertainment.",
-        "ratings": "0",
-        "images": [
-            {
-                "image": "http://34.224.21.224:8000/uploads/product/ipad_pro.png"
-            }
-        ],
-        "category": "Tablets",
-        "seller": "sparrow",
-        "stock": 2,
-        "numOfReviews": 0,
-        "user": "653d3ee8af385f43f88f2703",
-        "reviews": [],
-        "__v": 0
-    }
+  {
+    "name": "Sony WH-1000XM4",
+    "price": 12,
+    "description": "Experience industry-leading noise cancellation and superior sound quality with the Sony WH-1000XM4 wireless headphones.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/sony_wh1000xm4.png"}],
+    "category": "Audio Equipment",
+    "seller": "techhive",
+    "stock": 5,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Google Pixel 6",
+    "price": 11,
+    "description": "The Google Pixel 6 features the all-new Google Tensor chip for faster performance and advanced AI capabilities.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/google_pixel_6.png"}],
+    "category": "Phones",
+    "seller": "edigroups",
+    "stock": 6,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "MacBook Air M2",
+    "price": 22,
+    "description": "The MacBook Air with M2 chip delivers faster performance, amazing battery life, and a sleek, fanless design.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/macbook_air_m2.png"}],
+    "category": "Laptops",
+    "seller": "sparrow",
+    "stock": 4,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Samsung Galaxy Tab S8",
+    "price": 18,
+    "description": "The Samsung Galaxy Tab S8 offers a large AMOLED screen, long battery life, and powerful multitasking features.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/galaxy_tab_s8.png"}],
+    "category": "Tablets",
+    "seller": "edigroups",
+    "stock": 7,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Fitbit Charge 5",
+    "price": 7,
+    "description": "Fitbit Charge 5 tracks your fitness, sleep, and heart rate while providing smart notifications on your wrist.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/fitbit_charge_5.png"}],
+    "category": "Wearable Fitness Trackers",
+    "seller": "techhive",
+    "stock": 10,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "HP Spectre x360",
+    "price": 16,
+    "description": "A sleek 2-in-1 laptop with a 360-degree hinge and stunning OLED display for productivity and entertainment.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/hp_spectre_x360.png"}],
+    "category": "Laptops",
+    "seller": "edigroups",
+    "stock": 3,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "OnePlus 9 Pro",
+    "price": 9,
+    "description": "OnePlus 9 Pro features Hasselblad camera technology and super-fast charging for a flagship experience.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/oneplus_9_pro.png"}],
+    "category": "Phones",
+    "seller": "techhive",
+    "stock": 9,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Lenovo Tab P11",
+    "price": 13,
+    "description": "A family-friendly tablet with a vibrant display and long-lasting battery for entertainment and learning.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/lenovo_tab_p11.png"}],
+    "category": "Tablets",
+    "seller": "edigroups",
+    "stock": 6,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Asus ROG Phone 5",
+    "price": 14,
+    "description": "A gaming powerhouse with a 144Hz display, massive battery, and AirTrigger controls for elite mobile gaming.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/asus_rog_phone_5.png"}],
+    "category": "Phones",
+    "seller": "sparrow",
+    "stock": 4,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Garmin Venu Sq",
+    "price": 6,
+    "description": "Track your fitness and stay connected with Garmin Venu Sq, a smartwatch designed for daily wear and activity tracking.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/garmin_venu_sq.png"}],
+    "category": "Wearable Fitness Trackers",
+    "seller": "techhive",
+    "stock": 12,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Microsoft Surface Pro 9",
+    "price": 20,
+    "description": "A 2-in-1 laptop with high portability, the Surface Pro 9 offers a full Windows experience on a detachable screen.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/surface_pro_9.png"}],
+    "category": "Tablets",
+    "seller": "edigroups",
+    "stock": 5,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Logitech MX Master 3",
+    "price": 7,
+    "description": "An advanced wireless mouse with ergonomic design and customizable buttons for professional users.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/logitech_mx_master_3.png"}],
+    "category": "Computer Accessories",
+    "seller": "techhive",
+    "stock": 8,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Oculus Quest 2",
+    "price": 25,
+    "description": "The Oculus Quest 2 is a standalone virtual reality headset with high-resolution displays and intuitive controls.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/oculus_quest_2.png"}],
+    "category": "Virtual Reality Headsets",
+    "seller": "edigroups",
+    "stock": 7,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Amazon Echo Dot (4th Gen)",
+    "price": 8,
+    "description": "Smart speaker with Alexa, perfect for smart home control and music streaming.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/echo_dot_4th_gen.png"}],
+    "category": "Smart Home Devices",
+    "seller": "sparrow",
+    "stock": 15,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Sony PlayStation 5",
+    "price": 30,
+    "description": "Next-generation gaming console with ultra-fast SSD and immersive graphics.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/ps5.png"}],
+    "category": "Gaming Consoles",
+    "seller": "edigroups",
+    "stock": 5,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "price": 12,
+    "description": "Advanced health monitoring with ECG, blood oxygen, and fitness tracking.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/apple_watch_series_7.png"}],
+    "category": "Watches",
+    "seller": "sparrow",
+    "stock": 7,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Bose SoundLink Revolve",
+    "price": 15,
+    "description": "Portable Bluetooth speaker with deep, immersive 360° sound.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/bose_soundlink_revolve.png"}],
+    "category": "Audio Equipment",
+    "seller": "techhive",
+    "stock": 9,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  },
+  {
+    "name": "Razer BlackWidow V3",
+    "price": 9,
+    "description": "Mechanical gaming keyboard with customizable RGB lighting and programmable keys.",
+    "ratings": "0",
+    "images": [{"image": "http://34.224.21.224:8000/uploads/product/razer_blackwidow_v3.png"}],
+    "category": "Computer Accessories",
+    "seller": "sparrow",
+    "stock": 6,
+    "numOfReviews": 0,
+    "user": "653d3ee8af385f43f88f2703",
+    "reviews": [],
+    "__v": 0
+  }
 ]
