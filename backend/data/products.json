@@ -4,251 +4,322 @@
     "price": 12,
     "description": "Experience industry-leading noise cancellation and superior sound quality with the Sony WH-1000XM4 wireless headphones.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/sony_wh1000xm4.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download.jfif"
+      }
+    ],
     "category": "Audio Equipment",
     "seller": "techhive",
     "stock": 5,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Google Pixel 6",
     "price": 11,
     "description": "The Google Pixel 6 features the all-new Google Tensor chip for faster performance and advanced AI capabilities.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/google_pixel_6.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (1).jfif"
+      }
+    ],
     "category": "Phones",
     "seller": "edigroups",
     "stock": 6,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "MacBook Air M2",
     "price": 22,
     "description": "The MacBook Air with M2 chip delivers faster performance, amazing battery life, and a sleek, fanless design.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/macbook_air_m2.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (2).jfif"
+      }
+    ],
     "category": "Laptops",
     "seller": "sparrow",
     "stock": 4,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Samsung Galaxy Tab S8",
     "price": 18,
     "description": "The Samsung Galaxy Tab S8 offers a large AMOLED screen, long battery life, and powerful multitasking features.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/galaxy_tab_s8.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (3).jfif"
+      }
+    ],
     "category": "Tablets",
     "seller": "edigroups",
     "stock": 7,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Fitbit Charge 5",
     "price": 7,
     "description": "Fitbit Charge 5 tracks your fitness, sleep, and heart rate while providing smart notifications on your wrist.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/fitbit_charge_5.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (4).jfif"
+      }
+    ],
     "category": "Wearable Fitness Trackers",
     "seller": "techhive",
     "stock": 10,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "HP Spectre x360",
     "price": 16,
     "description": "A sleek 2-in-1 laptop with a 360-degree hinge and stunning OLED display for productivity and entertainment.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/hp_spectre_x360.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (5).jfif"
+      }
+    ],
     "category": "Laptops",
     "seller": "edigroups",
     "stock": 3,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "OnePlus 9 Pro",
     "price": 9,
     "description": "OnePlus 9 Pro features Hasselblad camera technology and super-fast charging for a flagship experience.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/oneplus_9_pro.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (6).jfif"
+      }
+    ],
     "category": "Phones",
     "seller": "techhive",
     "stock": 9,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Lenovo Tab P11",
     "price": 13,
     "description": "A family-friendly tablet with a vibrant display and long-lasting battery for entertainment and learning.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/lenovo_tab_p11.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (7).jfif"
+      }
+    ],
     "category": "Tablets",
     "seller": "edigroups",
     "stock": 6,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Asus ROG Phone 5",
     "price": 14,
     "description": "A gaming powerhouse with a 144Hz display, massive battery, and AirTrigger controls for elite mobile gaming.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/asus_rog_phone_5.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (8).jfif"
+      }
+    ],
     "category": "Phones",
     "seller": "sparrow",
     "stock": 4,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Garmin Venu Sq",
     "price": 6,
     "description": "Track your fitness and stay connected with Garmin Venu Sq, a smartwatch designed for daily wear and activity tracking.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/garmin_venu_sq.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (9).jfif"
+      }
+    ],
     "category": "Wearable Fitness Trackers",
     "seller": "techhive",
     "stock": 12,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Microsoft Surface Pro 9",
     "price": 20,
     "description": "A 2-in-1 laptop with high portability, the Surface Pro 9 offers a full Windows experience on a detachable screen.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/surface_pro_9.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (10).jfif"
+      }
+    ],
     "category": "Tablets",
     "seller": "edigroups",
     "stock": 5,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Logitech MX Master 3",
     "price": 7,
     "description": "An advanced wireless mouse with ergonomic design and customizable buttons for professional users.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/logitech_mx_master_3.png"}],
+    "images": [
+      {
+        "image": "http://127.0.0.1:8000/uploads/product/download (11).jfif"
+      }
+    ],
     "category": "Computer Accessories",
     "seller": "techhive",
     "stock": 8,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Oculus Quest 2",
     "price": 25,
     "description": "The Oculus Quest 2 is a standalone virtual reality headset with high-resolution displays and intuitive controls.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/oculus_quest_2.png"}],
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/oculus_quest_2.png"
+      }
+    ],
     "category": "Virtual Reality Headsets",
     "seller": "edigroups",
     "stock": 7,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Amazon Echo Dot (4th Gen)",
     "price": 8,
     "description": "Smart speaker with Alexa, perfect for smart home control and music streaming.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/echo_dot_4th_gen.png"}],
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/echo_dot_4th_gen.png"
+      }
+    ],
     "category": "Smart Home Devices",
-    "seller": "sparrow",
+    "seller": "techhive",
     "stock": 15,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
-    "name": "Sony PlayStation 5",
-    "price": 30,
-    "description": "Next-generation gaming console with ultra-fast SSD and immersive graphics.",
+    "name": "Nintendo Switch OLED",
+    "price": 23,
+    "description": "Portable gaming console with vibrant OLED screen and enhanced audio.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/ps5.png"}],
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/nintendo_switch_oled.png"
+      }
+    ],
     "category": "Gaming Consoles",
-    "seller": "edigroups",
+    "seller": "sparrow",
     "stock": 5,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
-    "name": "Apple Watch Series 7",
-    "price": 12,
-    "description": "Advanced health monitoring with ECG, blood oxygen, and fitness tracking.",
+    "name": "Canon EOS R6",
+    "price": 30,
+    "description": "Professional mirrorless camera with outstanding autofocus and image stabilization.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/apple_watch_series_7.png"}],
-    "category": "Watches",
-    "seller": "sparrow",
-    "stock": 7,
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/canon_eos_r6.png"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "edigroups",
+    "stock": 3,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
-    "name": "Bose SoundLink Revolve",
-    "price": 15,
-    "description": "Portable Bluetooth speaker with deep, immersive 360° sound.",
+    "name": "DJI Mavic Air 2",
+    "price": 28,
+    "description": "Compact drone with 4K video, smart flight modes, and excellent battery life.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/bose_soundlink_revolve.png"}],
-    "category": "Audio Equipment",
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/dji_mavic_air_2.png"
+      }
+    ],
+    "category": "Drones",
     "seller": "techhive",
+    "stock": 4,
+    "numOfReviews": 0,
+    "reviews": [],
+    "user": "653d3ee8af385f43f88f2703"
+  },
+  {
+    "name": "Apple Watch Series 8",
+    "price": 15,
+    "description": "The latest Apple Watch with health monitoring, workout tracking, and cellular connectivity.",
+    "ratings": "0",
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/apple_watch_series_8.png"
+      }
+    ],
+    "category": "Wearable Fitness Trackers",
+    "seller": "edigroups",
     "stock": 9,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   },
   {
     "name": "Razer BlackWidow V3",
-    "price": 9,
+    "price": 10,
     "description": "Mechanical gaming keyboard with customizable RGB lighting and programmable keys.",
     "ratings": "0",
-    "images": [{"image": "http://34.224.21.224:8000/uploads/product/razer_blackwidow_v3.png"}],
+    "images": [
+      {
+        "image": "http://34.224.21.224:8000/uploads/product/razer_blackwidow_v3.png"
+      }
+    ],
     "category": "Computer Accessories",
     "seller": "sparrow",
     "stock": 6,
     "numOfReviews": 0,
-    "user": "653d3ee8af385f43f88f2703",
     "reviews": [],
-    "__v": 0
+    "user": "653d3ee8af385f43f88f2703"
   }
 ]
